@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าที่ 3</title>
+    <style>
+        div{
+            border:1px solid black;
+        }
+        span{
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <a href="index.html"> Back </a>
+    <!-- มาพูดเรื่อง ตาราง table กัน -->
+    <h1> Table Product </h1>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <!-- หัวตาราง column -->
+        <thead>
+            <th> image </th>
+            <th> name </th>
+            <th> price </th>
+            <th> buy it </th>
+        </thead>
+        <tbody align="center">
+            <tr bgcolor="pink">
+                <td> <img src="image/cute.png" alt="" width="100px" height="100px"> </td>
+                <td> girl </td>
+                <td> 200000 </td>
+                <td rowspan="2"> <a href="index.html" style="bottom: 0cap;"> buy </a></td>
+            </tr>
+
+            <tr>
+                <td> <img src="image/cute.png" alt="" width="100px" height="100px"> </td>
+                <td> girl </td>
+                <td> 200000 </td>
+                <!-- <td> <a href="index.html" style="bottom: 0cap;"> buy </a></td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td bgcolor="pink" colspan="3"> price : 39999 </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <span style="color: green;">Hello World</span>
+    <span style="color: blue;">Hello World</span>
+    <hr>
+    <div style="color: green;">Hello World</div>
+    <div style="color: blue;">Hello World</div>
 </body>
 </html>
